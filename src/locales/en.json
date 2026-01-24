@@ -1,0 +1,26 @@
+{
+    "metadata": {
+        "title": "Institutional Site",
+        "description": "Premium template for institutional websites"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "blog": "Blog",
+        "careers": "Careers",
+        "contact": "Contact",
+        "clientArea": "Client Area"
+    },
+    "hero": {
+        "title": "Building Your Brand's Future",
+        "subtitle": "Excellence, innovation, and commitment in every detail.",
+        "cta_primary": "Our Services",
+        "cta_secondary": "Contact Us"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "copyright": "© 2026 All rights reserved."
+    }
+}

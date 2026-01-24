@@ -1,0 +1,26 @@
+{
+    "metadata": {
+        "title": "Site Institucional",
+        "description": "Template premium para sites institucionais"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "Sobre Nós",
+        "services": "Serviços",
+        "blog": "Blog",
+        "careers": "Carreiras",
+        "contact": "Contato",
+        "clientArea": "Área do Cliente"
+    },
+    "hero": {
+        "title": "Construindo o Futuro da sua Marca",
+        "subtitle": "Excelência, inovação e compromisso em cada detalhe.",
+        "cta_primary": "Nossos Serviços",
+        "cta_secondary": "Fale Conosco"
+    },
+    "common": {
+        "loading": "Carregando...",
+        "error": "Ocorreu um erro",
+        "copyright": "© 2026 Todos os direitos reservados."
+    }
+}
