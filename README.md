@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ✨ Site Institucional 🌸
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Status](https://img.shields.io/badge/status-fofíssimo-FFB6C1?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br />
 
-## React Compiler
+**Uma experiência digital moderna, elegante e feita com muito carinho! 🌿✨**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[Ver Demo Online](https://vihisantos.github.io/site_institucional/)
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧚‍♀️ Sobre o Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Bem-vindo ao repositório do nosso Site Institucional! Este projeto foi criado com o objetivo de conectar pessoas e propósitos através de uma interface intuitiva e encantadora. Usamos as tecnologias mais modernas para garantir performance, acessibilidade e, claro, muita beleza visual! 💖
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🌟 Funcionalidades Mágicas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **🎨 UI/UX Incrível**: Design limpo com TailwindCSS e componentes `shadcn/ui` (via Radix).
+- **🎭 Animações Vivas**: Micro-interações suaves powered by `framer-motion`.
+- **🌐 Para o Mundo**: Suporte a múltiplos idiomas com `i18next`.
+- **📝 Formulários Inteligentes**: Validação robusta e fácil com `react-hook-form` e `zod`.
+- **⚡ Velocidade da Luz**: Desenvolvimento e build ultra-rápidos com Vite.
+- **📱 Totalmente Responsivo**: Fica lindo no celular, tablet ou computador.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tecnologias do Coração
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+As ferramentas que dão vida a este projeto:
+
+| Tech | Descrição |
+|---|---|
+| **⚛️ React 19** | A biblioteca do nosso coração |
+| **🔷 TypeScript** | Segurança e tipagem para um código feliz |
+| **🎨 TailwindCSS** | Estilização rápida e bonita |
+| **🚀 Vite** | O bundler mais rápido do oeste |
+| **📦 Lucide React** | Ícones perfeitinhos |
+
+## 🚀 Como Rodar o Projeto
+
+Quer ver essa mágica acontecendo na sua máquina? Siga os passinhos:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/vihisantos/site_institucional.git
+   ```
+
+2. **Entre na pasta do projeto:**
+   ```bash
+   cd site_institucional
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   # ou
+   yarn
+   ```
+
+4. **Rode o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Acesse no seu navegador:**
+   Abra `http://localhost:5173` e divirta-se! 🎉
+
+## 🤝 Como Contribuir
+
+Sinta-se à vontade para abrir **Issues** ou enviar **Pull Requests**. Toda ajuda é bem-vinda para deixarmos esse projeto ainda mais especial!
+
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/MinhaFeatureFofa`)
+3. Adicione suas mudanças (`git add .`)
+4. Comite suas mudanças (`git commit -m '✨ Adicionando uma feature mágica'`)
+5. Faça o Push da Branch (`git push origin feature/MinhaFeatureFofa`)
+6. Abra um Pull Request
+
+---
+
+<div align="center">
+
+Feito por Capybara Holding 🌸✨
+
+</div>
