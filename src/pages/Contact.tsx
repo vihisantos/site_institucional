@@ -4,6 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from '../components/atomic/Button';
 import { Input } from '../components/atomic/Input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/atomic/Card';
+import { trackFormSubmit } from '../lib/analytics';
 
 const contactSchema = z.object({
     name: z.string().min(2, "Nome é obrigatório"),
@@ -20,6 +21,7 @@ const Contact = () => {
 
     const onSubmit = (data: ContactForm) => {
         console.log(data);
+        trackFormSubmit("contact", true);
         alert("Mensagem enviada com sucesso (Mock)!");
     };
 

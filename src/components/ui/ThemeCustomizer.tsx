@@ -4,6 +4,7 @@ import { Button } from '../atomic/Button';
 import { Card, CardContent, CardHeader, CardTitle } from '../atomic/Card';
 import { Input } from '../atomic/Input';
 import { motion, AnimatePresence } from 'framer-motion';
+import { trackThemeChange } from '../../lib/analytics';
 
 export const ThemeCustomizer = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,13 @@ export const ThemeCustomizer = () => {
         setPrimaryColor(color);
         document.documentElement.style.setProperty('--color-primary', color);
         document.documentElement.style.setProperty('--color-ring', color);
+        trackThemeChange(color);
     };
 
     const updateRadius = (val: string) => {
         setRadius(val);
         document.documentElement.style.setProperty('--radius', val);
+        trackThemeChange(`radius-${val}`);
     };
 
     return (

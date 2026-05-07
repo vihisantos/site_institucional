@@ -8,12 +8,25 @@ import BlogList from './pages/Blog/BlogList';
 import Careers from './pages/Careers';
 import { AnimatePresence } from 'framer-motion';
 import { PageTransition } from './components/ui/PageTransition';
+import { trackPageView } from './lib/analytics';
+import { useEffect } from 'react';
+
+function AnalyticsTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   const location = useLocation();
 
   return (
     <AnimatePresence mode="wait">
+      <AnalyticsTracker />
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<PageTransition><Home /></PageTransition>} />
